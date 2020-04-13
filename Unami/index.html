@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Unami - The Unami Photo Gallery">
+  <title>FilipSjolander</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <script src="HTML_Include.js"></script>
+</head>
+
+<body class="bg-white index">
+  <div w3-include-html="navbar.html"></div>
+  <div class="background">
+    <img class="background-image" src="photos/snow-covered-mountain.jpg" alt="Snow Covered Mountain">
+  </div>
+  <div class="container-md index-container">
+    <h1 class="splashtext">Unami</h1>
+    <p class="under-splashtext">Welcome to the Unami Photo Gallery</p>
+    <a href="gallery.html" class="btn btn-secondary btn-lg" role="button">Visit the Gallery</a>
+    <a href="#pricing" class="btn btn-secondary btn-lg" role="button">Show pricing</a>
+  </div>
+  <div class="container text-center" id="pricing">
+    <h2 class="display-3">Pricing</h2>
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header card-head">
+            <h4 class="card-title"><i class="far fa-building"></i> Business</h4>
+            <p class="card-text badge-primary">Best Value</p>
+
+          </div>
+          <div class="card-body">
+            <p class="card-text" style="font-size:x-large;">$19.99/month</p>
+            <a href="services.html" class="btn btn-primary">Enquire about</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-header card-head">
+            <h4 class="card-title"><i class="far fa-star"></i> Premium</h4>
+            <p class="card-text badge-primary">Best Seller</p>
+          </div>
+          <div class="card-body">
+            <p class="card-text" style="font-size:x-large;">$9.99/month</p>
+            <a href="services.html" class="btn btn-primary">Enquire about</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-header card-head">
+            <h4 class="card-title"><i class="fas fa-dollar-sign"></i> Basic</h4>
+            <p class="card-text badge-primary">Cheapest</p>
+
+          </div>
+          <div class="card-body">
+            <p class="card-text" style="font-size:x-large;">$4.99/month</p>
+            <a href="services.html" class="btn btn-primary">Enquire about</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <blockquote class="blockquote text-center" id="quote">
+    <p class="mb-0">"You miss 100% of the shots you don't take - Wayne Gretzky"</p>
+    <footer class="blockquote-footer">Michael Scott</footer>
+  </blockquote>
+  <div w3-include-html="footer.html"></div>
+  <script>includeHTML();</script>
+  <script src="animations.js"></script>
+</body>
+
+</html>
