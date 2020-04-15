@@ -3,8 +3,6 @@
 //const tl = new TimelineMax();
 //tl.fromTo( indexcontainer, 7, { opacity: "0" }, { opacity: "100", ease: Power2.easeInOut });
 
-
-
 //dropdown on hover
 window.addEventListener("load", function () {
   const dropdown1 = document.querySelector(".dropdown1");
@@ -37,4 +35,11 @@ window.addEventListener("load", function () {
     dropdownmenu2.classList.remove("show");
     dropdowntoggle2.setAttribute("aria-expanded", "false");
   });
+
+  dropdown1.onclick = function () {
+    location.href = "gallery.html";
+  };
+  dropdown2.onclick = function () {
+    location.href = "about.html";
+  };
 });
