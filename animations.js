@@ -43,3 +43,4 @@ window.addEventListener("load", function () {
     location.href = "about.html";
   };
 });
+
