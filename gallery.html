@@ -1,82 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Unami - Gallery">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Unami - Gallery" />
     <title>Gallery</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
     <script src="HTML_Include.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div w3-include-html="navbar.html"></div>
     <div class="container">
-        <h1>Gallery</h1>
-        <p>The Unami photo gallery</p>
+      <h1>Gallery</h1>
+      <hr id="basic" class="my-4" />
     </div>
-    <div class="container-md">
-        <div class="gallery" id="gallery">
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/grand-valley2.jpg" alt="grand-valley">
-            </div>
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/sunset-mountains.jpg" alt="sunset-mountains">
-            </div>
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/trees.jpg" alt="trees">
-            </div>
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/sunset-desert.jpg" alt="sunset-desert">
-            </div>
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/sand.jpg" alt="sand">
-            </div>
-            <div class="mb-3>
-                <img class=" img-fluid" src="photos/leafs.jpg" alt="leafs">
-            </div>
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/rocks.jpg" alt="rocks">
-            </div>
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/river-and-mountain.jpg" alt="river-and-mountain">
-            </div>
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/rocky.jpg" alt="rocks">
-            </div>
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/valley.jpg" alt="valley">
-            </div>
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/mountain.jpg" alt="mountain">
-            </div>
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/butterfly.jpg" alt="butterfly">
-            </div>
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/red-flower.jpg" alt="red-flower">
-            </div>
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/grand-valley.jpg" alt="grand-valley">
-            </div>
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/small-waterfall.jpg" alt="small-waterfall">
-            </div>
-            <div class="mb-3">
-                <img class="img-fluid" src="photos/island.jpg" alt="island">
-            </div>
+    <div class="container" >
+      <h2>Basic</h2>
+      <div class="gallery" id="gallery">
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/grand-valley2.jpg"
+            alt="grand-valley"
+            loading="lazy"
+          />
         </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/sunset-mountains.jpg"
+            alt="sunset-mountains"
+            loading="lazy"
+            
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/trees.jpg"
+            alt="trees"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/leafs.jpg"
+            alt="leafs"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/sand.jpg"
+            alt="sand"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/sunset-desert.jpg"
+            alt="sunset-desert"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <hr id="premium" class="my-4" />
     </div>
-    <div w3-include-html="footer.html"></div>
-    <script src="animations.js"></script>
-</body>
+    <div class="container">
+      <h2>Premium</h2>
+      <div class="gallery" id="gallery">
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/river-and-mountain.jpg"
+            alt="river-and-mountain"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/grand-valley.jpg"
+            alt="grand-valley"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/rocks.jpg"
+            alt="rocks"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/island.jpg"
+            alt="island"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/valley.jpg"
+            alt="valley"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/red-flower.jpg"
+            alt="red-flower"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/rocky.jpg"
+            alt="rocks"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/small-waterfall.jpg"
+            alt="small-waterfall"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/butterfly.jpg"
+            alt="butterfly"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <hr id="business" class="my-4" />
+    </div>
+    <div class="container" >
+      <h2>Business</h2>
+      <div class="gallery" id="gallery">
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/purple-flower.jpg"
+            alt="purple-flower"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/moon.jpg"
+            alt="moon"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/vulcano.jpg"
+            alt="vulcano"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/butter-flower.jpg"
+            alt="butterfly"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/tree-of-god.jpg"
+            alt="tree-of.god"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/waterfall-blue.jpg"
+            alt="waterfall-blue"
+            loading="lazy"
+          />
+        </div>
+        <div class="mb-3">
+          <img
+            class="img-fluid"
+            src="photos/ocean-sunset.jpg"
+            alt="ocean-sunset"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
 
+    <div w3-include-html="footer.html"></div>
+    <script>
+      includeHTML();
+    </script>
+    <script src="animations.js"></script>
+  </body>
 </html>

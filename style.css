@@ -1,117 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 html {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    font-size: 1.3rem;
-    font-family: 'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-size: 1.3rem;
+  font-family: "Lato", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .navbar {
-    margin-bottom: 1%;
-    margin-top: 4px;
+  margin-bottom: 1%;
+  margin-top: 4px;
 }
 
 .nav-link {
-    color: rgb(26, 26, 26) !important;
+  color: rgb(26, 26, 26) !important;
 }
 
 .over-nav {
-    background-color: #586d8c;
-    height: 4px;
-    width: 100vw;
+  background-color: #586d8c;
+  height: 6px;
+  width: 100vw;
 }
 
 .gallery {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-width: 33%;
-    -moz-column-width: 33%;
-    column-width: 33%;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
 }
 
 .splashtext {
-    margin-top: 17%;
-    font-weight: 200;
-    font-size: 10rem;
-    z-index: 2;
+  margin-top: 17%;
+  font-weight: 350;
+  font-size: 10rem;
+  z-index: 2;
+  color: white;
 }
 
 .under-splashtext {
-    font-weight: 100;
-    font-size: 3rem;
-    margin-top: -3%;
+  font-weight: 100;
+  font-size: 3rem;
+  margin-top: -3%;
+  color: white;
 }
 
 .btn {
-    font-family: Lato;
+  font-family: Lato;
 }
 
 .navbar-brand {
-    font-size: 2rem !important;
+  font-size: 2rem !important;
 }
 
 .table .fa-check-circle {
-    color: green;
-    font-size: 1.5rem;
+  color: green;
+  font-size: 1.5rem;
 }
 
 .table .fa-times-circle {
-    color: red;
-    font-size: 1.5rem;
+  color: red;
+  font-size: 1.5rem;
 }
 
 .nav-link {
-    font-size: 1.2rem !important;
+  font-size: 1.2rem !important;
 }
 
-.background {
-    margin-top: -2%;
-    width: 100vw;
-    height: 100vh;
-    margin-bottom: -900px;
-    z-index: -1;
+.index-background {
+  margin-top: -18px;
+  width: 100%;
+  height: auto;
+  margin-bottom: -900px;
+  z-index: -1;
 }
 
 .index-container {
-    margin-bottom: 500px;
-}
-
-.blockquote-footer {
-    margin-bottom: 550px;
+  margin-bottom: 175px;
 }
 
 h1 {
-    margin-bottom: 20px !important;
+  margin-bottom: 20px !important;
 }
 
 .container {
-    padding: 0 !important;
-}
-
-.page-footer {
-    margin-top: 40px;
+  padding: 0 !important;
 }
 
 .socials a {
-    color: black;
-    text-decoration: none;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    line-height: 0;
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.page-footer {
+  margin-left: 30px;
 }
 
 .socials a:hover {
-    color: rgb(185, 185, 185);
-    text-decoration: none;
+  color: rgb(185, 185, 185);
+  text-decoration: none;
 }
 
 a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .card-head {
-    padding: 10px 0 0 0 !important;
+  padding: 10px 0 0 0 !important;
+}
+#pricing {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.index-footer{
+  color: black;
+}
+.index-footer .socials a{
+  color: white;
+}
+.index-footer p {
+  display: inline;
+  color: white !important;
+}
+.page-footer p {
+  display: inline;
+  color: black;
 }

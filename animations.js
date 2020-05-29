@@ -1,7 +1,13 @@
-//const indexcontainer = document.querySelector(".index-container");
+//index animations
+const indexcontainer = document.querySelector(".index-container");
+const indexfooter = document.querySelector(".index-footer");
+const indexbackground = document.querySelector(".index-background");
+const indexnavbar = document.querySelector(".index-navbar");
 
-//const tl = new TimelineMax();
-//tl.fromTo( indexcontainer, 7, { opacity: "0" }, { opacity: "100", ease: Power2.easeInOut });
+const tl = new TimelineMax();
+tl.fromTo(indexbackground,1.5,{ autoAlpha: "0" },{ autoAlpha: "1", ease: Power2.easeInOut });
+tl.fromTo(indexcontainer,2,{ autoAlpha: "0" }, { autoAlpha: "1", ease: Power2.easeInOut },);
+tl.fromTo(indexfooter,2,{ autoAlpha: "0" },{ autoAlpha: "1", ease: Power2.easeInOut }, "-=2");
 
 //dropdown on hover
 window.addEventListener("load", function () {
@@ -43,5 +49,3 @@ window.addEventListener("load", function () {
     location.href = "about.html";
   };
 });
-
-includeHTML();
