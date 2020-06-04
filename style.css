@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
 html {
   overflow-y: scroll;
@@ -41,6 +41,7 @@ html {
   font-size: 10rem;
   z-index: 2;
   color: white;
+  letter-spacing: 0.05em;
 }
 
 .under-splashtext {
@@ -48,6 +49,7 @@ html {
   font-size: 3rem;
   margin-top: -3%;
   color: white;
+  letter-spacing: 0.02em;
 }
 
 .btn {
@@ -119,10 +121,10 @@ a:hover {
   margin-bottom: 50px;
   margin-top: 50px;
 }
-.index-footer{
+.index-footer {
   color: black;
 }
-.index-footer .socials a{
+.index-footer .socials a {
   color: white;
 }
 .index-footer p {
@@ -132,4 +134,14 @@ a:hover {
 .page-footer p {
   display: inline;
   color: black;
+}
+.error {
+  margin-top: 420px;
+}
+.index .btn {
+  letter-spacing: 0.1em !important;
+  margin-left: 10px;
+}
+.navbar-brand {
+  letter-spacing: 0.05em;
 }

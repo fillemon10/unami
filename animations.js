@@ -5,12 +5,29 @@ const indexbackground = document.querySelector(".index-background");
 const indexnavbar = document.querySelector(".index-navbar");
 
 const tl = new TimelineMax();
-tl.fromTo(indexbackground,1.5,{ autoAlpha: "0" },{ autoAlpha: "1", ease: Power2.easeInOut });
-tl.fromTo(indexcontainer,2,{ autoAlpha: "0" }, { autoAlpha: "1", ease: Power2.easeInOut },);
-tl.fromTo(indexfooter,2,{ autoAlpha: "0" },{ autoAlpha: "1", ease: Power2.easeInOut }, "-=2");
+tl.fromTo(
+  indexbackground,
+  1.5,
+  { autoAlpha: "0" },
+  { autoAlpha: "1", ease: Power2.easeInOut }
+);
+tl.fromTo(
+  indexcontainer,
+  2,
+  { autoAlpha: "0" },
+  { autoAlpha: "1", ease: Power2.easeInOut }
+);
+tl.fromTo(
+  indexfooter,
+  2,
+  { autoAlpha: "0" },
+  { autoAlpha: "1", ease: Power2.easeInOut },
+  "-=2"
+);
 
 //dropdown on hover
 window.addEventListener("load", function () {
+  Active();
   const dropdown1 = document.querySelector(".dropdown1");
   const dropdownmenu1 = document.querySelector(".dropdown-menu1");
   const dropdowntoggle1 = document.querySelector(".dropdown-toggle1");
