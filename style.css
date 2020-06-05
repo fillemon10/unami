@@ -80,6 +80,11 @@ html {
   height: auto;
   margin-bottom: -900px;
   z-index: -1;
+  border-bottom: black;
+  box-shadow: black;
+  -webkit-box-shadow: 0px 20px 64px -1px rgba(88, 109, 140, 0.86);
+  -moz-box-shadow: 0px 20px 64px -1px rgba(88, 109, 140, 0.86);
+  box-shadow: 0px 20px 64px -1px rgba(88, 109, 140, 0.86);
 }
 
 .index-container {
@@ -95,7 +100,7 @@ h1 {
 }
 
 .socials a {
-  color: black;
+  color: #586d8c;
   text-decoration: none;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -121,16 +126,6 @@ a:hover {
   margin-bottom: 50px;
   margin-top: 50px;
 }
-.index-footer {
-  color: black;
-}
-.index-footer .socials a {
-  color: white;
-}
-.index-footer p {
-  display: inline;
-  color: white !important;
-}
 .page-footer p {
   display: inline;
   color: black;
@@ -144,4 +139,31 @@ a:hover {
 }
 .navbar-brand {
   letter-spacing: 0.05em;
+}
+.scroll {
+  margin-top: 500px;
+  border-radius: 15px !important;
+  -webkit-box-shadow: 0px 20px 64px -1px rgba(88, 109, 140, 0.86);
+  -moz-box-shadow: 0px 20px 64px -1px rgba(88, 109, 140, 0.86);
+  box-shadow: 0px 20px 64px -1px rgba(88, 109, 140, 0.86);
+}
+.btn-primary {
+  background-color: #586d8c !important;
+  border-color: #4e617c !important;
+}
+.badge-primary {
+  background-color: #586d8c !important;
+  border-color: #4e617c !important;
+}
+.index-footer {
+  margin-top: -370px;
+}
+.fa-check-circle {
+  color: #586d8c !important;
+}
+.scroll .row {
+  padding: 50px;
+}
+.services-img {
+  margin-bottom: 25px;
 }

@@ -1,8 +1,6 @@
 //index animations
 const indexcontainer = document.querySelector(".index-container");
-const indexfooter = document.querySelector(".index-footer");
 const indexbackground = document.querySelector(".index-background");
-const indexnavbar = document.querySelector(".index-navbar");
 
 const tl = new TimelineMax();
 tl.fromTo(
@@ -17,17 +15,9 @@ tl.fromTo(
   { autoAlpha: "0" },
   { autoAlpha: "1", ease: Power2.easeInOut }
 );
-tl.fromTo(
-  indexfooter,
-  2,
-  { autoAlpha: "0" },
-  { autoAlpha: "1", ease: Power2.easeInOut },
-  "-=2"
-);
 
 //dropdown on hover
 window.addEventListener("load", function () {
-  Active();
   const dropdown1 = document.querySelector(".dropdown1");
   const dropdownmenu1 = document.querySelector(".dropdown-menu1");
   const dropdowntoggle1 = document.querySelector(".dropdown-toggle1");
@@ -65,4 +55,20 @@ window.addEventListener("load", function () {
   dropdown2.onclick = function () {
     location.href = "about.html";
   };
+});
+
+var executed = false;
+
+window.addEventListener("scroll", function () {
+      if (!executed) {
+          executed = true;
+          const scroll = document.querySelector(".scroll");
+          const scrolltl = new TimelineMax();
+          scrolltl.fromTo(
+            scroll,
+            1,
+            { y: "0px" },
+            { y: "-400px", ease: Power2.easeInOut }
+          );
+      }
 });
